@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <dialog class="addDialog">
+        <form class="addForm">
+            <input type="text" name="addProductname" placeholder="add product name">
+            <input type="text" name="addProductimg" placeholder="add product image">
+            <input type="text" name="addProductprice" placeholder="add product price">
+            <input type="text" name="addProductmodel" placeholder="add product model">
+            <button class='save'>
+                <div class="svg-wrapper-1">
+                    <div class="svg-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" class="icon">
+                            <path
+                                d="M22,15.04C22,17.23 20.24,19 18.07,19H5.93C3.76,19 2,17.23 2,15.04C2,13.07 3.43,11.44 5.31,11.14C5.28,11 5.27,10.86 5.27,10.71C5.27,9.33 6.38,8.2 7.76,8.2C8.37,8.2 8.94,8.43 9.37,8.8C10.14,7.05 11.13,5.44 13.91,5.44C17.28,5.44 18.87,8.06 18.87,10.83C18.87,10.94 18.87,11.06 18.86,11.17C20.65,11.54 22,13.13 22,15.04Z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+                <span>Save</span>
+            </button>
+
+        </form>
+    </dialog>
+    <dialog class="editDialog">
+        <form class="editForm">
+            <input type="text" name="editProductname" placeholder="edit product name">
+            <input type="text" name="editProductimg" placeholder="edit product image">
+            <input type="text" name="editProductprice" placeholder="edit product price">
+            <input type="text" name="editProductmodel" placeholder="edit product model">
+            <button>Upload</button>
+        </form>
+    </dialog>
+    <dialog class="shopping-dialog">
+        <button class="closeBtn">X</button>
+        <h2>Your bag</h2>
+        <div class="sidebar-dialog"></div>
+        <p class="total">total: 0</p>
+    </dialog>
+    <header>
+        <div class="top-header">
+            <h1>Comfy</h1>
+            <div id="poda">
+                <div class="glow"></div>
+                <div class="darkBorderBg"></div>
+                <div class="darkBorderBg"></div>
+                <div class="darkBorderBg"></div>
+
+                <div class="white"></div>
+
+                <div class="border"></div>
+
+                <div id="main">
+                    <input placeholder="Search..." type="text" name="text" class="input search" />
+                    <div id="input-mask"></div>
+                    <div id="pink-mask"></div>
+                    <div class="filterBorder"></div>
+                    <div id="filter-icon">
+                        <svg preserveAspectRatio="none" height="27" width="27" viewBox="4.8 4.56 14.832 15.408"
+                            fill="none">
+                            <path
+                                d="M8.16 6.65002H15.83C16.47 6.65002 16.99 7.17002 16.99 7.81002V9.09002C16.99 9.56002 16.7 10.14 16.41 10.43L13.91 12.64C13.56 12.93 13.33 13.51 13.33 13.98V16.48C13.33 16.83 13.1 17.29 12.81 17.47L12 17.98C11.24 18.45 10.2 17.92 10.2 16.99V13.91C10.2 13.5 9.97 12.98 9.73 12.69L7.52 10.36C7.23 10.08 7 9.55002 7 9.20002V7.87002C7 7.17002 7.52 6.65002 8.16 6.65002Z"
+                                stroke="#d6d6e6" stroke-width="1" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg>
+                    </div>
+                    <div id="search-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2"
+                            stroke-linejoin="round" stroke-linecap="round" height="24" fill="none"
+                            class="feather feather-search">
+                            <circle stroke="url(#search)" r="8" cy="11" cx="11"></circle>
+                            <line stroke="url(#searchl)" y2="16.65" y1="22" x2="16.65" x1="22"></line>
+                            <defs>
+                                <linearGradient gradientTransform="rotate(50)" id="search">
+                                    <stop stop-color="#f8e7f8" offset="0%"></stop>
+                                    <stop stop-color="#b6a9b7" offset="50%"></stop>
+                                </linearGradient>
+                                <linearGradient id="searchl">
+                                    <stop stop-color="#b6a9b7" offset="0%"></stop>
+                                    <stop stop-color="#837484" offset="50%"></stop>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-select-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"
+                    class="custom-select-icon">
+                    <path stroke-width="4" stroke-linejoin="round" stroke-linecap="round" fill="none"
+                        d="M60.7,53.6,50,64.3m0,0L39.3,53.6M50,64.3V35.7m0,46.4A32.1,32.1,0,1,1,82.1,50,32.1,32.1,0,0,1,50,82.1Z">
+                    </path>
+                </svg>
+                <select class="custom-select">
+                    <option value="All">All</option>
+                    <option value="Ikea">Ikea</option>
+                    <option value="Marcos">Marcos</option>
+                    <option value="Caressa">Caressa</option>
+                    <option value="Liddy">Liddy</option>
+                </select>
+            </div>
+            <button class="cssbuttons-io-button addProduct">
+                <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z" fill="currentColor"></path>
+                </svg>
+                <span>Add</span>
+            </button>
+            <label class="switch">
+                <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <g fill="#ffd43b">
+                            <circle r="5" cy="12" cx="12"></circle>
+                            <path
+                                d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z">
+                            </path>
+                        </g>
+                    </svg></span>
+                <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path
+                            d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z">
+                        </path>
+                    </svg></span>
+                <input type="checkbox" class="inputCheckbox">
+                <span class="slider"></span>
+            </label>
+            <a href="../home/home.html">
+                <button class="go-back-btn" type="button">
+                    <div class="go-back-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" height="25px" width="25px">
+                            <path d="M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64z" fill="#000000"></path>
+                            <path
+                                d="m237.248 512 265.408 265.344a32 32 0 0 1-45.312 45.312l-288-288a32 32 0 0 1 0-45.312l288-288a32 32 0 1 1 45.312 45.312L237.248 512z"
+                                fill="#000000"></path>
+                        </svg>
+                    </div>
+                    <p class="go-back-text">Go Back</p>
+                </button>
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="main"></div>
+    </main>
+    <script type="module" src="../admin/adminFile/main.js"></script>
+</body>
+
+</html>

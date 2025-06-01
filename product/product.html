@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="product.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <dialog class="shopping-dialog">
+        <button class="closeBtn">X</button>
+        <h2>Your bag</h2>
+        <div class="sidebar-dialog"></div>
+    </dialog>
+    <header>
+        <div class="top-header">
+            <ul>
+                <li><a href="../home/home.html">Home</a></li>
+                <li><a href="../product/product.html">Products</a></li>
+                <li><a href="../about/about.html">About</a></li>
+            </ul>
+            <button class="menu-button">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                </svg>
+            </button>
+            <h1>Comfy</h1>
+            <label class="switch">
+                <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <g fill="#ffd43b">
+                            <circle r="5" cy="12" cx="12"></circle>
+                            <path
+                                d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z">
+                            </path>
+                        </g>
+                    </svg></span>
+                <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path
+                            d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z">
+                        </path>
+                    </svg></span>
+                <input type="checkbox" class="inputCheckbox">
+                <span class="slider"></span>
+            </label>
+            <a href="../admin/login/login.html">
+                <button class="cssbuttons-io-button">
+                    Sign up
+                    <div class="icon">
+                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                                d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </div>
+                </button>
+            </a>
+            <div class="buttons-div">
+                <button class="img-button">
+                    <img src="../img/shopping.png">
+                    <div class="count"></div>
+                </button>
+            </div>
+            <dialog class="menu-list">
+                <p class="closeMenu">X</p>
+
+                <li><a href="../home/home.html">Home</a></li>
+                <li><a href="../product/product.html">Products</a></li>
+                <li><a href="../about/about.html">About</a></li>
+            </dialog>
+        </div>
+        <div class="bottom-div">
+            <h1>Home / Products</h1>
+        </div>
+    </header>
+    <main>
+        <div class="sidebar">
+            <div id="poda">
+                <div class="glow"></div>
+                <div class="darkBorderBg"></div>
+                <div class="darkBorderBg"></div>
+                <div class="darkBorderBg"></div>
+
+                <div class="white"></div>
+
+                <div class="border"></div>
+
+                <div id="main">
+                    <input placeholder="Search..." type="text" name="text" class="input search" />
+                    <div id="input-mask"></div>
+                    <div id="pink-mask"></div>
+                    <div class="filterBorder"></div>
+                    <div id="filter-icon">
+                        <svg preserveAspectRatio="none" height="27" width="27" viewBox="4.8 4.56 14.832 15.408"
+                            fill="none">
+                            <path
+                                d="M8.16 6.65002H15.83C16.47 6.65002 16.99 7.17002 16.99 7.81002V9.09002C16.99 9.56002 16.7 10.14 16.41 10.43L13.91 12.64C13.56 12.93 13.33 13.51 13.33 13.98V16.48C13.33 16.83 13.1 17.29 12.81 17.47L12 17.98C11.24 18.45 10.2 17.92 10.2 16.99V13.91C10.2 13.5 9.97 12.98 9.73 12.69L7.52 10.36C7.23 10.08 7 9.55002 7 9.20002V7.87002C7 7.17002 7.52 6.65002 8.16 6.65002Z"
+                                stroke="#d6d6e6" stroke-width="1" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg>
+                    </div>
+                    <div id="search-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2"
+                            stroke-linejoin="round" stroke-linecap="round" height="24" fill="none"
+                            class="feather feather-search">
+                            <circle stroke="url(#search)" r="8" cy="11" cx="11"></circle>
+                            <line stroke="url(#searchl)" y2="16.65" y1="22" x2="16.65" x1="22"></line>
+                            <defs>
+                                <linearGradient gradientTransform="rotate(50)" id="search">
+                                    <stop stop-color="#f8e7f8" offset="0%"></stop>
+                                    <stop stop-color="#b6a9b7" offset="50%"></stop>
+                                </linearGradient>
+                                <linearGradient id="searchl">
+                                    <stop stop-color="#b6a9b7" offset="0%"></stop>
+                                    <stop stop-color="#837484" offset="50%"></stop>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br><br>
+            <div class="custom-select-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"
+                    class="custom-select-icon">
+                    <path stroke-width="4" stroke-linejoin="round" stroke-linecap="round" fill="none"
+                        d="M60.7,53.6,50,64.3m0,0L39.3,53.6M50,64.3V35.7m0,46.4A32.1,32.1,0,1,1,82.1,50,32.1,32.1,0,0,1,50,82.1Z">
+                    </path>
+                </svg>
+
+                <select class="custom-select">
+                    <option value="All">All</option>
+                    <option value="Ikea">Ikea</option>
+                    <option value="Marcos">Marcos</option>
+                    <option value="Caressa">Caressa</option>
+                    <option value="Liddy">Liddy</option>
+                </select>
+            </div>
+            <h3>Price</h3>
+            <input type="range" max="100" value="80" class="priceRange">
+            <p class="priceValue">Value : $80</p>
+        </div>
+        <div class="main"></div>
+    </main>
+    <script type="module" src="./productFile/main.js"></script>
+</body>
+
+</html>

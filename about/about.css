@@ -1,0 +1,475 @@
+body {
+    margin: 0;
+    font-family: "Montserrat", 'serif';
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.top-header h1 {
+    font-weight: 700;
+    font-size: 48px;
+    font-family: "Charm", serif;
+    margin: 0;
+}
+
+.top-header {
+    display: flex;
+    padding: 20px 120px 52px 120px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    margin: 0;
+}
+
+ul li {
+    font-size: 20px;
+    list-style: none;
+    font-weight: 600;
+}
+
+.img-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.bottom-div {
+    background-color: hsla(206, 33%, 96%, 1);
+    padding: 107px 120px 107px 120px;
+}
+
+.bottom-div h1 {
+    font-weight: 600;
+    font-size: 25px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.count {
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: hsla(21, 62%, 45%, 1);
+    color: white;
+    font-weight: 600;
+    width: 24px;
+    height: 24px;
+    padding: 5px;
+    position: absolute;
+    top: 10px;
+    right: 110px;
+}
+
+.buttons-image {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.shopping-dialog {
+    height: 100%;
+    width: 420px;
+    border: none;
+    margin-left: 69%;
+}
+
+.dialog-img {
+    width: 128px;
+}
+
+main {
+    padding: 90px 265px 276px 265px
+}
+
+main h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+main h1 span {
+    color: hsla(21, 62%, 45%, 1);
+    font-weight: 700;
+}
+
+main p {
+    color: hsla(206, 54%, 30%, 1);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 169%;
+    margin-top: 80px;
+}
+
+.shopping-dialog h2 {
+    font-family: 'Charm', 'serif';
+    text-align: center;
+    font-size: 32px;
+}
+
+.remove {
+    height: 20px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 64px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #73C0FC;
+    transition: .4s;
+    border-radius: 30px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    left: 2px;
+    bottom: 2px;
+    z-index: 2;
+    background-color: #e8e8e8;
+    transition: .4s;
+}
+
+.sun svg {
+    position: absolute;
+    top: 6px;
+    left: 36px;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+}
+
+.moon svg {
+    fill: #73C0FC;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+}
+
+.sun svg {
+    animation: rotate 15s linear infinite;
+}
+
+@keyframes rotate {
+
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.moon svg {
+    animation: tilt 5s linear infinite;
+}
+
+@keyframes tilt {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-10deg);
+    }
+
+    75% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.input:checked+.slider {
+    background-color: #183153;
+}
+
+.input:focus+.slider {
+    box-shadow: 0 0 1px #183153;
+}
+
+.input:checked+.slider:before {
+    transform: translateX(30px);
+}
+
+.menu-button {
+    display: none;
+}
+
+.shopping-dialog h2 {
+    text-align: center;
+    font-family: 'Charm', serif;
+}
+
+.cart {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.totalPriceDiv {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* sign up btn */
+
+.cssbuttons-io-button {
+    background: #a370f0;
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #714da6;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+    cursor: pointer;
+}
+
+.cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+    right: 0.3em;
+    transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #7b52b9;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+}
+
+
+@media (max-width: 480px) {
+    .top-header {
+        padding: 20px;
+    }
+
+    .top-header h1 {
+        font-size: 32px;
+        margin: 0;
+    }
+
+    .size-6 {
+        width: 30px;
+    }
+
+    .shopping-cart img {
+        width: 30px
+    }
+
+    .count {
+        right: 20px;
+        padding: 5px;
+        font-size: 14px;
+        height: 16px;
+        top: 20px;
+        font-weight: 500;
+    }
+
+    .render-div {
+        gap: 10px;
+    }
+
+    .render-div p {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    .menu-button {
+        border: none;
+        background: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .shopping-dialog {
+        margin-left: 22%;
+    }
+
+    .shopping-dialog h1 {
+        font-size: 22px;
+    }
+
+    .shopping-dialog img {
+        width: 100px !important;
+    }
+
+    .closeMenu {
+        text-align: end;
+    }
+
+    .cart {
+        display: flex;
+        gap: 10px;
+    }
+
+    .cart p,
+    .cart p {
+        font-size: 14px;
+        margin: 5px 0;
+    }
+
+    .dialog-div {
+        gap: 10px;
+    }
+
+    .menu-list {
+        height: 100%;
+        margin-right: 72.3%;
+        border: none;
+    }
+
+    .menu-list li {
+        list-style: none;
+        margin-bottom: 20px;
+    }
+
+    .bottom-div {
+        padding: 50px;
+    }
+
+    .bottom-div {
+        font-size: 20px;
+    }
+
+    ul {
+        display: none;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .main {
+        display: block;
+        margin-left: 0;
+    }
+
+    .main-div,
+    main {
+        display: block;
+    }
+
+    .sidebar {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .selectStatus {
+        margin: 0;
+    }
+
+    .main-div img {
+        width: 100%;
+        height: 200px
+    }
+
+    .main-div h1 {
+        font-size: 30px;
+    }
+
+    .main-div h2 {
+        font-size: 20px;
+    }
+
+    .main-div h1,
+    .main-div h2,
+    .paragraph {
+        text-align: center;
+    }
+
+    .paragraph {
+        font-size: inherit;
+    }
+
+    .main-div button {
+        margin-left: 18%;
+    }
+
+    .p {
+        width: 24px;
+        height: 24px;
+    }
+
+    .shopping-dialog {
+        width: 70%;
+        margin-left: 22%;
+    }
+
+    main p {
+        font-size: inherit;
+    }
+}

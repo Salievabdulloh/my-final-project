@@ -1,0 +1,702 @@
+* {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+header {
+    background-image: url('../img/Rectangle 37.png');
+    width: 100%;
+    height: 900px;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    padding: 28px 120px 0 120px;
+}
+
+.top-header h1 {
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.top-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 261px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+}
+
+ul li {
+    font-size: 20px;
+    color: white;
+    list-style: none;
+}
+
+.bottom-header h1 {
+    font-size: 96px;
+}
+
+.bottom-header h2 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.bottom-header button:hover {
+    background-color: white;
+    color: black;
+}
+
+.h1 {
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+main {
+    padding: 96px 100px 125px 100px;
+}
+
+.slider-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+.card-div,
+main {
+    flex-direction: column;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.main-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+/* slider-button */
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.button-3d {
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+    border-width: 0;
+    padding: 0 8px;
+    min-width: 4em;
+    min-height: 4em;
+    box-sizing: border-box;
+    background: transparent;
+    font: inherit;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.button-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    padding: 8px 16px;
+    transform: translateY(0);
+    color: #fff;
+    background-image: linear-gradient(145deg, #6a11cb, #2575fc);
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    transition: transform 0.3s, border-radius 0.3s, background 10s;
+}
+
+.button-3d:active .button-top {
+    border-radius: 10px 10px 8px 8px / 8px;
+    transform: translateY(2px);
+    background-image: linear-gradient(145deg, #2575fc, #6a11cb);
+}
+
+.button-bottom {
+    position: absolute;
+    z-index: 1;
+    bottom: 4px;
+    left: 4px;
+    border-radius: 20px;
+    padding-top: 6px;
+    width: calc(100% - 8px);
+    height: calc(100% - 10px);
+    background-image: linear-gradient(145deg, #2575fc, #6a11cb);
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.5);
+    transition: border-radius 0.2s, padding-top 0.2s;
+}
+
+.button-base {
+    position: absolute;
+    z-index: 0;
+    top: 4px;
+    left: 0;
+    border-radius: 20px;
+    width: 100%;
+    height: calc(100% - 4px);
+    background-color: rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 1px 0 rgba(255, 255, 255, 0.75),
+        inset 0 2px 2px rgba(0, 0, 0, 0.25);
+    transition: border-radius 0.2s, padding-top 0.2s;
+}
+
+.button-3d:active .button-bottom {
+    border-radius: 10px 10px 8px 8px / 8px;
+    padding-top: 0;
+}
+
+.button-3d:active .button-base {
+    border-radius: 10px 10px 8px 8px / 8px;
+}
+
+.bottom-header button {
+    margin-top: 32px;
+}
+
+.top-header h1,
+.bottom-header h1 {
+    font-family: "charm";
+}
+
+.name {
+    color: gray;
+    font-weight: 700;
+    margin: 24px 0 16px 0;
+}
+
+.price {
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.all-products {
+    border: none;
+    padding: 14px 29px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 20px;
+    background-color: hsla(21, 62%, 45%, 1);
+    color: white;
+    margin-top: 51px;
+}
+
+.slash {
+    color: hsla(21, 62%, 45%, 1);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.card-div {
+    position: relative;
+}
+
+.image {
+    width: 300px;
+    height: auto;
+    display: block;
+}
+
+.info,
+.add {
+    position: absolute;
+    top: 30%;
+    left: 55%;
+    transform: translateX(-50%);
+    z-index: 1;
+    display: none;
+    background: white;
+    padding: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.info {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
+
+.card-div:hover .info,
+.card-div:hover .add {
+    display: block;
+}
+
+.main-div::-webkit-scrollbar {
+    display: none;
+}
+
+.overplay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 71.5%;
+    background-color: black;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.card-div:hover .overplay {
+    opacity: 0.5;
+}
+
+.shopping-cart {
+    border: none;
+    background: none;
+}
+
+.addToCardDialog {
+    margin-left: 69%;
+    border: none;
+    height: 100%;
+    width: 420px;
+}
+
+.addToCardDialog h1 {
+    text-align: center;
+    font-family: 'Charm', serif;
+    margin-bottom: 20px;
+}
+
+.count {
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: hsla(21, 62%, 45%, 1);
+    color: white;
+    font-weight: 600;
+    height: 24px;
+    padding: 5px 10px;
+    position: absolute;
+    top: 17px;
+    right: 120px;
+}
+
+.name-dialog {
+    color: hsla(0, 0%, 0%, 0.87);
+}
+
+.dialog-div {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.counter {
+    margin: 0 10px;
+}
+
+.menu-button {
+    display: none;
+}
+
+.closeMenu {
+    text-align: end;
+}
+
+.totalPriceDiv {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-div {
+    width: 300px;
+    flex-shrink: 0;
+    /* margin-right: 20px; */
+}
+
+
+
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 64px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #73C0FC;
+    transition: .4s;
+    border-radius: 30px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    left: 2px;
+    bottom: 2px;
+    z-index: 2;
+    background-color: #e8e8e8;
+    transition: .4s;
+}
+
+.sun svg {
+    position: absolute;
+    top: 6px;
+    left: 36px;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+}
+
+.moon svg {
+    fill: #73C0FC;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+}
+
+.sun svg {
+    animation: rotate 15s linear infinite;
+}
+
+@keyframes rotate {
+
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.moon svg {
+    animation: tilt 5s linear infinite;
+}
+
+@keyframes tilt {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-10deg);
+    }
+
+    75% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.input:checked+.slider {
+    background-color: #183153;
+}
+
+.input:focus+.slider {
+    box-shadow: 0 0 1px #183153;
+}
+
+.input:checked+.slider:before {
+    transform: translateX(30px);
+}
+
+/* From Uiverse.io by gharsh11032000 */
+.animated-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 16px 36px;
+    border: 4px solid;
+    border-color: transparent;
+    font-size: 16px;
+    background-color: inherit;
+    border-radius: 100px;
+    font-weight: 600;
+    color: greenyellow;
+    box-shadow: 0 0 0 2px greenyellow;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button svg {
+    position: absolute;
+    width: 24px;
+    fill: greenyellow;
+    z-index: 9;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+    right: 16px;
+}
+
+.animated-button .arr-2 {
+    left: -25%;
+}
+
+.animated-button .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: greenyellow;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .text {
+    position: relative;
+    z-index: 1;
+    transform: translateX(-12px);
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button:hover {
+    box-shadow: 0 0 0 12px transparent;
+    color: #212121;
+    border-radius: 12px;
+}
+
+.animated-button:hover .arr-1 {
+    right: -25%;
+}
+
+.animated-button:hover .arr-2 {
+    left: 16px;
+}
+
+.animated-button:hover .text {
+    transform: translateX(12px);
+}
+
+.animated-button:hover svg {
+    fill: #212121;
+}
+
+.animated-button:active {
+    scale: 0.95;
+    box-shadow: 0 0 0 4px greenyellow;
+}
+
+.animated-button:hover .circle {
+    width: 220px;
+    height: 220px;
+    opacity: 1;
+}
+
+
+/* sign up btn */
+
+.cssbuttons-io-button {
+    background: #a370f0;
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #714da6;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+    cursor: pointer;
+}
+
+.cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+    right: 0.3em;
+    transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #7b52b9;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+}
+
+
+@media (max-width: 480px) {
+    header {
+        width: 100%;
+        height: 100%;
+    }
+
+    .top-header h1 {
+        font-size: 32px;
+    }
+
+    .size-6 {
+        width: 30px;
+        color: white;
+    }
+
+    .shopping-cart img {
+        width: 30px
+    }
+
+    .count {
+        padding: 5px 8px;
+        font-size: 14px;
+        height: 16px;
+        top: 15px;
+        right: 45px;
+        font-weight: 500;
+    }
+
+    .menu-button {
+        border: none;
+        background: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .addToCardDialog {
+        margin-left: 22%;
+    }
+
+    .addToCardDialog h1 {
+        font-size: 22px;
+    }
+
+    .addToCardDialog img {
+        width: 100px !important;
+    }
+
+    .name-dialog,
+    .price {
+        font-size: 14px;
+    }
+
+    .dialog-div {
+        gap: 10px;
+    }
+
+    .menu-list {
+        height: 100%;
+        border: none;
+    }
+
+    .menu-list li {
+        list-style: none;
+        margin-bottom: 20px;
+    }
+
+    .header {
+        padding: 20px 50px 50px 50px;
+
+    }
+
+    .top-header {
+        margin-bottom: 100px;
+    }
+
+    .bottom-header h1 {
+        font-size: 60px;
+    }
+
+    .bottom-header h2 {
+        font-size: 30px;
+    }
+
+    .bottom-header button {
+        font-size: 16px;
+        padding: 12px 15px;
+    }
+
+    ul {
+        display: none;
+    }
+
+    main {
+        padding: 20px 50px;
+    }
+
+    .main-div {
+        display: block;
+    }
+}

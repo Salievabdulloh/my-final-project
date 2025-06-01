@@ -1,0 +1,180 @@
+{
+  "product": [
+    {
+      "productName": "High-Back Bench",
+      "productPrice": "9.99",
+      "productImage": "../img/1.png",
+      "productCategory": "Ikea",
+      "productColor": [
+        "hsla(0, 73%, 54%, 1)",
+        "hsla(0, 0%, 13%, 1)"
+      ],
+      "productId": "1",
+      "productStatus": false,
+      "id": "2122"
+    },
+    {
+      "productName": "Utopia Sofa",
+      "productDescription": "This furniture is so good",
+      "productImage": "../img/2.png",
+      "productPrice": "39.95",
+      "productColor": [
+        "hsla(0, 73%, 54%, 1)",
+        "hsla(0, 0%, 13%, 1)"
+      ],
+      "productCategory": "Marcos",
+      "productId": "2",
+      "productStatus": false,
+      "id": "c4d3"
+    },
+    {
+      "productName": "Entertainment Center",
+      "productDescription": "This furniture is so good",
+      "productImage": "../img/3.png",
+      "productPrice": "29.98",
+      "productColor": [
+        "hsla(0, 73%, 54%, 1)",
+        "hsla(0, 0%, 13%, 1)"
+      ],
+      "productCategory": "Caressa",
+      "productId": "3",
+      "productStatus": false,
+      "id": "d1bb"
+    },
+    {
+      "productName": "Albany Table",
+      "productDescription": "This furniture is so good",
+      "productImage": "../img/4.png",
+      "productPrice": "79.99",
+      "productColor": [
+        "hsla(0, 73%, 54%, 1)",
+        "hsla(0, 0%, 13%, 1)"
+      ],
+      "productCategory": "Liddy",
+      "productId": "4",
+      "productStatus": false,
+      "id": "5e93"
+    },
+    {
+      "productName": "Accent Chair",
+      "productDescription": "This furniture is so good",
+      "productImage": "../img/5.png",
+      "productPrice": "25.99",
+      "productColor": [
+        "hsla(0, 73%, 54%, 1)",
+        "hsla(0, 0%, 13%, 1)"
+      ],
+      "productCategory": "Ikea",
+      "productId": "5",
+      "productStatus": false,
+      "id": "00b5"
+    },
+    {
+      "productName": "Wooden Table",
+      "productDescription": "This furniture is so good",
+      "productImage": "../img/6.png",
+      "productPrice": "45.99",
+      "productColor": [
+        "hsla(0, 73%, 54%, 1)",
+        "hsla(0, 0%, 13%, 1)"
+      ],
+      "productCategory": "Marcos",
+      "productId": "6",
+      "productStatus": false,
+      "id": "386c"
+    },
+    {
+      "productName": "Dining Table",
+      "productDescription": "This furniture is so good",
+      "productImage": "../img/7.png",
+      "productPrice": "6.99",
+      "productColor": [
+        "hsla(0, 73%, 54%, 1)",
+        "hsla(0, 0%, 13%, 1)"
+      ],
+      "productCategory": "Caressa",
+      "productId": "7",
+      "productStatus": false,
+      "id": "afb3"
+    },
+    {
+      "productName": "Sofa Set",
+      "productDescription": "This furniture is so good",
+      "productImage": "../img/8.png",
+      "productPrice": "69.99",
+      "productColor": [
+        "hsla(0, 73%, 54%, 1)",
+        "hsla(0, 0%, 13%, 1)"
+      ],
+      "productCategory": "Liddy",
+      "productId": "8",
+      "productStatus": false,
+      "id": "a660"
+    },
+    {
+      "productName": "Modern Bookshelf",
+      "productDescription": "This furniture is so good",
+      "productImage": "../img/9.png",
+      "productPrice": "8.99",
+      "productColor": [
+        "hsla(0, 73%, 54%, 1)",
+        "hsla(0, 0%, 13%, 1)"
+      ],
+      "productCategory": "Ikea",
+      "productId": "9",
+      "productStatus": false,
+      "id": "ea4a"
+    },
+    {
+      "productName": "Emperor Bed",
+      "productDescription": "This furniture is so good",
+      "productImage": "../img/10.png",
+      "productPrice": "21.99",
+      "productColor": [
+        "hsla(0, 73%, 54%, 1)",
+        "hsla(0, 0%, 13%, 1)"
+      ],
+      "productCategory": "Marcos",
+      "productId": "10",
+      "productStatus": false,
+      "id": "2ef5"
+    },
+    {
+      "productName": "Albany Sectional",
+      "productDescription": "This furniture is so good",
+      "productImage": "../img/11.png",
+      "productPrice": "10.99",
+      "productColor": [
+        "hsla(0, 73%, 54%, 1)",
+        "hsla(0, 0%, 13%, 1)"
+      ],
+      "productCategory": "Caressa",
+      "productId": "11",
+      "productStatus": false,
+      "id": "46b6"
+    },
+    {
+      "productName": "Leather Sofa",
+      "productDescription": "This furniture is so good",
+      "productImage": "../img/12.png",
+      "productPrice": "9.99",
+      "productColor": [
+        "hsla(0, 73%, 54%, 1)",
+        "hsla(0, 0%, 13%, 1)"
+      ],
+      "productCategory": "Liddy",
+      "productId": "12",
+      "productStatus": false,
+      "id": "ebbd"
+    }
+  ],
+  "admin": [
+    {
+      "adminName": "Abdulloh",
+      "adminLastname": "Saliev",
+      "adminEmail": "aba@gmail.com",
+      "adminPassword": "123",
+      "id": "3d5d"
+    }
+  ]
+}

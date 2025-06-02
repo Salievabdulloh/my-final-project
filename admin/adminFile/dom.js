@@ -1,4 +1,4 @@
-import get, { api, editFunction, searchItems, selectStatusFunction, deleteItem, addFunc } from "./api.js"
+import get, { api, editFunction, searchItems, selectStatusFunction, deleteItem, addFunc, checkUser } from "./api.js"
 
 let main = document.querySelector('.main')
 let selectStatus = document.querySelector('.custom-select')
@@ -129,7 +129,14 @@ function getData(data) {
         actionBtn.style.display = 'flex'
         actionBtn.style.gap = '20px'
 
-        actionBtn.append(editBtn, deleteBtn)
+        let check = document.createElement('input')
+        check.type = 'checkbox'
+        check.checked = e.productStatus
+        check.onchange = () => {
+            checkUser(e)
+        }
+
+        actionBtn.append(editBtn, deleteBtn, check)
         buttonsDiv.append(infoBtn)
         div.append(image, buttonsDiv, name, price, overplay, actionBtn)
         main.append(div)

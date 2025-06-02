@@ -48,6 +48,24 @@ async function editFunction(update, idx) {
         console.error(error)
     }
 }
+
+async function checkUser(e) {
+    let changeStatus = {
+        ...e,
+        productStatus: !e.productStatus
+    }
+    try {
+        await fetch(`${api}/${e.id}`, {
+            method: "PUT",
+            headers: { "content-type": 'application/json' },
+            body: JSON.stringify(changeStatus)
+        })
+        get()
+    } catch (error) {
+        console.error(error)
+    }
+}
+
 async function addFunc(product) {
     try {
         await fetch(api, {
@@ -73,4 +91,4 @@ async function deleteItem(id) {
 }
 
 
-export { searchItems, addFunc, selectStatusFunction, editFunction, deleteItem }
+export { searchItems, addFunc, selectStatusFunction, editFunction, deleteItem, checkUser }

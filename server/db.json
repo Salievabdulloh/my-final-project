@@ -1,30 +1,29 @@
 {
   "product": [
     {
-      "productId": "2122",
-      "productName": "High-Back Bench",
-      "productPrice": "9.99",
+      "productId": "11",
+      "productName": "Utopia Sofa",
+      "productPrice": "39.95",
       "productImage": "../img/1.png",
-      "productCategory": "Ikea",
+      "productCategory": "Marcos",
       "productColor": [
-        "#00ff04",
-        "#ff0000"
+        "#000000",
+        "#ff8080"
       ],
       "productStatus": true,
-      "id": "2122"
+      "id": "11"
     },
     {
+      "productId": "c4d3",
       "productName": "Utopia Sofa",
-      "productDescription": "This furniture is so good",
-      "productImage": "../img/2.png",
       "productPrice": "39.95",
-      "productColor": [
-        "red",
-        "green"
-      ],
+      "productImage": "../img/2.png",
       "productCategory": "Marcos",
-      "productId": "2",
-      "productStatus": false,
+      "productColor": [
+        "#fbff00",
+        "#ff5252"
+      ],
+      "productStatus": true,
       "id": "c4d3"
     },
     {
@@ -33,8 +32,8 @@
       "productImage": "../img/3.png",
       "productPrice": "29.98",
       "productColor": [
-        "hsla(0, 73%, 54%, 1)",
-        "hsla(0, 0%, 13%, 1)"
+        "#eeeeee",
+        "#000000"
       ],
       "productCategory": "Caressa",
       "productId": "3",
@@ -47,12 +46,12 @@
       "productImage": "../img/4.png",
       "productPrice": "79.99",
       "productColor": [
-        "hsla(0, 73%, 54%, 1)",
-        "hsla(0, 0%, 13%, 1)"
+        "#eeeeee",
+        "#000000"
       ],
       "productCategory": "Liddy",
       "productId": "4",
-      "productStatus": false,
+      "productStatus": true,
       "id": "5e93"
     },
     {
@@ -61,8 +60,8 @@
       "productImage": "../img/5.png",
       "productPrice": "25.99",
       "productColor": [
-        "hsla(0, 73%, 54%, 1)",
-        "hsla(0, 0%, 13%, 1)"
+        "#eeeeee",
+        "#000000"
       ],
       "productCategory": "Ikea",
       "productId": "5",
@@ -75,8 +74,8 @@
       "productImage": "../img/6.png",
       "productPrice": "45.99",
       "productColor": [
-        "hsla(0, 73%, 54%, 1)",
-        "hsla(0, 0%, 13%, 1)"
+        "#eeeeee",
+        "#000000"
       ],
       "productCategory": "Marcos",
       "productId": "6",
@@ -89,8 +88,8 @@
       "productImage": "../img/7.png",
       "productPrice": "6.99",
       "productColor": [
-        "hsla(0, 73%, 54%, 1)",
-        "hsla(0, 0%, 13%, 1)"
+        "#eeeeee",
+        "#000000"
       ],
       "productCategory": "Caressa",
       "productId": "7",
@@ -103,12 +102,12 @@
       "productImage": "../img/8.png",
       "productPrice": "69.99",
       "productColor": [
-        "hsla(0, 73%, 54%, 1)",
-        "hsla(0, 0%, 13%, 1)"
+        "#eeeeee",
+        "#000000"
       ],
       "productCategory": "Liddy",
       "productId": "8",
-      "productStatus": false,
+      "productStatus": true,
       "id": "a660"
     },
     {
@@ -117,12 +116,12 @@
       "productImage": "../img/9.png",
       "productPrice": "8.99",
       "productColor": [
-        "hsla(0, 73%, 54%, 1)",
-        "hsla(0, 0%, 13%, 1)"
+        "#eeeeee",
+        "#000000"
       ],
       "productCategory": "Ikea",
       "productId": "9",
-      "productStatus": false,
+      "productStatus": true,
       "id": "ea4a"
     },
     {
@@ -131,8 +130,8 @@
       "productImage": "../img/10.png",
       "productPrice": "21.99",
       "productColor": [
-        "hsla(0, 73%, 54%, 1)",
-        "hsla(0, 0%, 13%, 1)"
+        "#eeeeee",
+        "#000000"
       ],
       "productCategory": "Marcos",
       "productId": "10",
@@ -145,8 +144,8 @@
       "productImage": "../img/11.png",
       "productPrice": "10.99",
       "productColor": [
-        "hsla(0, 73%, 54%, 1)",
-        "hsla(0, 0%, 13%, 1)"
+        "#eeeeee",
+        "#000000"
       ],
       "productCategory": "Caressa",
       "productId": "11",
@@ -159,8 +158,8 @@
       "productImage": "../img/12.png",
       "productPrice": "9.99",
       "productColor": [
-        "hsla(0, 73%, 54%, 1)",
-        "hsla(0, 0%, 13%, 1)"
+        "#eeeeee",
+        "#000000"
       ],
       "productCategory": "Liddy",
       "productId": "12",
@@ -178,7 +177,7 @@
         "#ff1414",
         "#ff00ea"
       ],
-      "productStatus": false
+      "productStatus": true
     },
     {
       "productId": "ad7c",

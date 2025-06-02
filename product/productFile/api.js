@@ -37,5 +37,14 @@ async function selectStatusFunction(value) {
     }
 }
 
+async function range(value) {
+    try {
+        let res = await fetch(api)
+        let data = await res.json()
+        getData(data.filter(e => e.productPrice <= value))
+    } catch (error) {
+        console.error(error)
+    }
+}
 
-export { searchItems, selectStatusFunction }
+export { searchItems, selectStatusFunction, range }

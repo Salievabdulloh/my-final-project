@@ -101,6 +101,7 @@ nextBtn.onclick = () => {
         behavior: 'smooth'
     })
 }
+
 prevBtn.onclick = () => {
     mainDiv.scrollBy({
         left: -cardWidth * 1,
@@ -109,8 +110,9 @@ prevBtn.onclick = () => {
 }
 
 function getData(data) {
+    let limited = data.slice(0, 12)
     mainDiv.innerHTML = ''
-    data.forEach(e => {
+    limited.forEach(e => {
         let div = document.createElement('div')
         div.classList.add('card-div')
 

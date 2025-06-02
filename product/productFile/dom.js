@@ -1,4 +1,4 @@
-import get, { api, searchItems, selectStatusFunction } from "./api.js"
+import get, { api, range, searchItems, selectStatusFunction } from "./api.js"
 
 let main = document.querySelector('.main')
 let selectStatus = document.querySelector('.custom-select')
@@ -14,17 +14,16 @@ let closeMenu = document.querySelector('.closeMenu')
 let sun = document.querySelector('.sun')
 let slider = document.querySelector('.inputCheckbox')
 let body = document.body
-let priceRange = document.querySelector('.priceRange')
-let priceValue = document.querySelector('.priceValue')
 let moon = document.querySelector('.moon')
 let bottomDiv = document.querySelector('.bottom-div')
+let rangeInput = document.querySelector('.rangeInput')
+let rangeValue = document.querySelector('.rangeValue')
 
-let currentPrice = parseInt(priceRange.value)
-
-priceRange.oninput = () => {
-    priceValue.innerHTML = `Value: $${priceRange.value}`
-    // curre    ntPrice = parseInt(priceRange.value)
-    // get(api).then(data => getData(data))
+rangeInput.oninput = () => {
+    let value = rangeInput.value
+    let price = parseInt(value)
+    rangeValue.textContent = `Value: $${price}`
+    range(price)
 }
 
 let darkMode = localStorage.getItem('theme') || 'light'
@@ -88,48 +87,53 @@ closeBtn.onclick = () => {
     shoppingDialog.close()
 }
 
-function getData(data = []) {
+function getData(data) {
     main.innerHTML = ''
-    // .filter(e => parseInt(e.productPrice) <= currentPrice)
     data.forEach(e => {
-        let div = document.createElement('div')
-        div.classList.add('card')
+        if (e.productStatus) {
+            let div = document.createElement('div')
+            div.classList.add('card')
 
-        let name = document.createElement('p')
-        name.innerHTML = e.productName
-        name.classList.add('name')
+            let name = document.createElement('p')
+            name.innerHTML = e.productName
+            name.classList.add('name')
 
-        let price = document.createElement('p')
-        price.innerHTML = '$' + e.productPrice
-        price.style.fontWeight = '700'
+            let price = document.createElement('p')
+            price.innerHTML = '$' + e.productPrice
+            price.style.fontWeight = '700'
 
-        let image = document.createElement('img')
-        image.src = e.productImage
-        image.style.width = '310px'
-        image.style.height = '200px'
+            let image = document.createElement('img')
+            image.src = e.productImage
+            image.style.width = '310px'
+            image.style.height = '200px'
 
-        let add = document.createElement('button')
-        add.innerHTML = 'add'
-        add.classList.add('add')
-        add.onclick = () => {
-            addToCart(e)
+            let add = document.createElement('button')
+            add.innerHTML = `<span class="button__text">Add Item</span><span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>`
+            add.classList.add('button')
+            add.onclick = () => {
+                addToCart(e)
+            }
+
+            let infoBtn = document.createElement('button')
+            infoBtn.innerHTML = 'info'
+            infoBtn.classList.add('info')
+            infoBtn.onclick = () => {
+                localStorage.setItem('id', e.productId)
+                window.location = 'http://127.0.0.1:5501/info/info.html'
+            }
+
+            let buttonsDiv = document.createElement('div')
+            let overplay = document.createElement('div')
+            overplay.classList.add('overplay')
+
+            let addBtnDiv = document.createElement('div')
+            addBtnDiv.classList.add('add-btn-div')
+            
+            addBtnDiv.append(add)
+            buttonsDiv.append(infoBtn, addBtnDiv)
+            div.append(image, buttonsDiv, name, price, overplay)
+            main.append(div)
         }
-
-        let infoBtn = document.createElement('button')
-        infoBtn.innerHTML = 'info'
-        infoBtn.classList.add('info')
-        infoBtn.onclick = () => {
-            localStorage.setItem('id', e.productId)
-            window.location = 'http://127.0.0.1:5501/info/info.html'
-        }
-
-        let buttonsDiv = document.createElement('div')
-        let overplay = document.createElement('div')
-        overplay.classList.add('overplay')
-
-        buttonsDiv.append(infoBtn, add)
-        div.append(image, buttonsDiv, name, price, overplay)
-        main.append(div)
     })
 }
 
@@ -222,7 +226,6 @@ function renderSideBar() {
         infoDiv.append(name, price, counterDiv)
         div.append(img, infoDiv, remove)
         sidebarDialog.append(div)
-
         e.quantity = quantity
     })
 

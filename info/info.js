@@ -169,7 +169,6 @@ function render() {
         infoDiv.append(name, price, counterDiv)
         div.append(img, infoDiv, remove)
         sidebar.append(div)
-
         e.quantity = quantity
     })
 
@@ -196,7 +195,9 @@ function removeItem(id) {
 }
 
 function getData(data) {
-    data.forEach(e => {
+    main.innerHTML = ''
+    let oneDiv = data.slice(0, 1)
+    oneDiv.forEach(e => {
         let div = document.createElement('div')
         div.classList.add('main-div')
         nameOfProduct.innerHTML = e.productName
@@ -239,8 +240,13 @@ function getData(data) {
         let colorDiv = document.createElement('div')
         colorDiv.classList.add('all-color-div')
 
+        let inSell = document.createElement('span')
+        inSell.innerHTML = e.productStatus ?
+            `<span class="true">for sell</span>` :
+            `<span class="false">out of sell</span>`
+
         colorDiv.append(price, conteiner)
-        infoDiv.append(name, model, colorDiv, par, addToCart)
+        infoDiv.append(name, model, inSell, colorDiv, par, addToCart)
         div.append(image, infoDiv)
         main.append(div)
     })

@@ -101,7 +101,7 @@ main {
 
 .main-div img {
     width: 612px;
-    height: 433px;
+    height: 450px;
 }
 
 .main-div h1 {
@@ -352,6 +352,21 @@ main {
     transform: scale(0.95);
 }
 
+.true,
+.false {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+}
+
+.true {
+    background-color: green;
+}
+
+.false {
+    background-color: red;
+}
 
 @media (max-width: 480px) {
     .top-header {

@@ -24,9 +24,11 @@ addForm.onsubmit = (e) => {
     e.preventDefault()
     let newProduct = {
         productName: e.target['addProductname'].value,
-        productPrice: e.target['addProductimg'].value,
-        productImage: e.target['addProductprice'].value,
+        productImage: e.target['addProductimg'].value,
+        productPrice: e.target['addProductprice'].value,
         productCategory: e.target['addProductmodel'].value,
+        productColor: [e.target['addProductcolor'].value, e.target['addProductcolor2'].value],
+        productStatus: e.target['addStatus'].value == 'true'
     }
     addFunc(newProduct)
 }
@@ -79,7 +81,7 @@ function getData(data) {
         name.classList.add('name')
 
         let price = document.createElement('p')
-        price.innerHTML = e.productPrice
+        price.innerHTML = `$${e.productPrice}`
         price.style.fontWeight = '700'
 
         let image = document.createElement('img')
@@ -117,6 +119,9 @@ function getData(data) {
             editForm.editProductprice.value = e.productPrice
             editForm.editProductimg.value = e.productImage
             editForm.editProductmodel.value = e.productCategory
+            editForm.editStatus.value = e.productStatus ? true : false
+            editForm.editProductcolor.value = e.productColor[0]
+            editForm.editProductcolor2.value = e.productColor[1]
             idx = e.id
         }
 
@@ -139,7 +144,8 @@ editForm.onsubmit = (e) => {
         productPrice: e.target['editProductprice'].value,
         productImage: e.target['editProductimg'].value,
         productCategory: e.target['editProductmodel'].value,
-        // productColor: productColor
+        productColor: [e.target['editProductcolor'].value, e.target['editProductcolor2'].value],
+        productStatus: e.target['editStatus'].value == 'true'
     }
     editFunction(updateItems, idx)
 }

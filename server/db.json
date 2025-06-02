@@ -1,16 +1,16 @@
 {
   "product": [
     {
+      "productId": "2122",
       "productName": "High-Back Bench",
       "productPrice": "9.99",
       "productImage": "../img/1.png",
       "productCategory": "Ikea",
       "productColor": [
-        "hsla(0, 73%, 54%, 1)",
-        "hsla(0, 0%, 13%, 1)"
+        "#00ff04",
+        "#ff0000"
       ],
-      "productId": "1",
-      "productStatus": false,
+      "productStatus": true,
       "id": "2122"
     },
     {
@@ -19,8 +19,8 @@
       "productImage": "../img/2.png",
       "productPrice": "39.95",
       "productColor": [
-        "hsla(0, 73%, 54%, 1)",
-        "hsla(0, 0%, 13%, 1)"
+        "red",
+        "green"
       ],
       "productCategory": "Marcos",
       "productId": "2",
@@ -66,7 +66,7 @@
       ],
       "productCategory": "Ikea",
       "productId": "5",
-      "productStatus": false,
+      "productStatus": true,
       "id": "00b5"
     },
     {
@@ -80,7 +80,7 @@
       ],
       "productCategory": "Marcos",
       "productId": "6",
-      "productStatus": false,
+      "productStatus": true,
       "id": "386c"
     },
     {
@@ -136,7 +136,7 @@
       ],
       "productCategory": "Marcos",
       "productId": "10",
-      "productStatus": false,
+      "productStatus": true,
       "id": "2ef5"
     },
     {
@@ -166,6 +166,32 @@
       "productId": "12",
       "productStatus": false,
       "id": "ebbd"
+    },
+    {
+      "id": "ca39",
+      "productName": "Table for family",
+      "productImage": "../img/14.png",
+      "productPrice": "12",
+      "productCategory": "Ikea",
+      "productId": "13",
+      "productColor": [
+        "#ff1414",
+        "#ff00ea"
+      ],
+      "productStatus": false
+    },
+    {
+      "productId": "ad7c",
+      "productName": "Glass Table",
+      "productPrice": "9.99",
+      "productImage": "../img/13.png",
+      "productCategory": "Marcos",
+      "productColor": [
+        "#b07878",
+        "#000000"
+      ],
+      "productStatus": true,
+      "id": "ad7c"
     }
   ],
   "admin": [

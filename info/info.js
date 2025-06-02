@@ -243,7 +243,7 @@ function getData(data) {
         let inSell = document.createElement('span')
         inSell.innerHTML = e.productStatus ?
             `<span class="true">for sale</span>` :
-            `<span class="false">out of sell</span>`
+            `<span class="false">out of sale</span>`
 
         colorDiv.append(price, conteiner)
         infoDiv.append(name, model, inSell, colorDiv, par, addToCart)

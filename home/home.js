@@ -131,8 +131,9 @@ function getData(data) {
         overplay.classList.add('overplay')
 
         let add = document.createElement('button')
-        add.innerHTML = 'add'
-        add.classList.add('add')
+        add.innerHTML = `<span class="button__text">Add Item</span><span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>`
+        add.classList.add('button')
+        // add.classList.add('add')
         add.onclick = () => {
             addToCart(e)
         }
@@ -146,8 +147,11 @@ function getData(data) {
         price.classList.add('price')
 
         let buttonsDiv = document.createElement('div')
-        buttonsDiv.append(infoBtn, add)
-
+        let addBtnDiv = document.createElement('div')
+        addBtnDiv.classList.add('addBtnDiv')
+        
+        addBtnDiv.append(add)
+        buttonsDiv.append(infoBtn, addBtnDiv)
         div.append(img, buttonsDiv, name, price, overplay)
         mainDiv.append(div)
     })

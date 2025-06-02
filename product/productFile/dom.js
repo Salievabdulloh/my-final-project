@@ -128,10 +128,23 @@ function getData(data) {
 
             let addBtnDiv = document.createElement('div')
             addBtnDiv.classList.add('add-btn-div')
-            
+
+            let ratingDiv = document.createElement('div')
+            ratingDiv.innerHTML = `<input value="5" name="rate" id="star5" type="radio">
+  <label title="text" for="star5"></label>
+  <input value="4" name="rate" id="star4" type="radio">
+  <label title="text" for="star4"></label>
+  <input value="3" name="rate" id="star3" type="radio" checked="">
+  <label title="text" for="star3"></label>
+  <input value="2" name="rate" id="star2" type="radio">
+  <label title="text" for="star2"></label>
+  <input value="1" name="rate" id="star1" type="radio">
+  <label title="text" for="star1"></label>`
+            ratingDiv.classList.add("rating")
+
             addBtnDiv.append(add)
             buttonsDiv.append(infoBtn, addBtnDiv)
-            div.append(image, buttonsDiv, name, price, overplay)
+            div.append(image, buttonsDiv, name, price, overplay, ratingDiv)
             main.append(div)
         }
     })

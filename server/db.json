@@ -51,7 +51,7 @@
       ],
       "productCategory": "Liddy",
       "productId": "4",
-      "productStatus": true,
+      "productStatus": false,
       "id": "5e93"
     },
     {
@@ -163,7 +163,7 @@
       ],
       "productCategory": "Liddy",
       "productId": "12",
-      "productStatus": false,
+      "productStatus": true,
       "id": "ebbd"
     },
     {
@@ -191,6 +191,55 @@
       ],
       "productStatus": true,
       "id": "ad7c"
+    },
+    {
+      "id": "f37e",
+      "productName": "",
+      "productImage": "",
+      "productPrice": "",
+      "productCategory": "",
+      "productColor": [
+        "#000000",
+        "#000000"
+      ],
+      "productStatus": true
+    },
+    {
+      "id": "717a",
+      "productName": "",
+      "productImage": "",
+      "productPrice": "",
+      "productCategory": "",
+      "productColor": [
+        "#000000",
+        "#000000"
+      ],
+      "productStatus": false
+    },
+    {
+      "productId": "50ea",
+      "productName": "",
+      "productPrice": "",
+      "productImage": "../img/1.png",
+      "productCategory": "",
+      "productColor": [
+        "#000000",
+        "#000000"
+      ],
+      "productStatus": false,
+      "id": "50ea"
+    },
+    {
+      "id": "4f17",
+      "productName": "",
+      "productImage": "",
+      "productPrice": "",
+      "productCategory": "",
+      "productColor": [
+        "#000000",
+        "#000000"
+      ],
+      "productStatus": false
     }
   ],
   "admin": [

@@ -128,15 +128,45 @@ function getData(data) {
         let actionBtn = document.createElement('div')
         actionBtn.style.display = 'flex'
         actionBtn.style.gap = '20px'
+        actionBtn.style.alignItems = 'center'
+        let checkWrapper = document.createElement('div');
+        checkWrapper.classList.add('checkbox-wrapper-12');
 
-        let check = document.createElement('input')
-        check.type = 'checkbox'
-        check.checked = e.productStatus
+        let check = document.createElement('input');
+        check.type = 'checkbox';
+        check.id = 'cbx-12';
+        check.checked = e.productStatus;
         check.onchange = () => {
-            checkUser(e)
-        }
+            checkUser(e);
+        };
 
-        actionBtn.append(editBtn, deleteBtn, check)
+        let cbx = document.createElement('div');
+        cbx.classList.add('cbx');
+        cbx.innerHTML = `
+    <label for="cbx-12"></label>
+    <svg fill="none" viewBox="0 0 15 14" height="14" width="15">
+      <path d="M2 8.36364L6.23077 12L13 2"></path>
+    </svg>
+`;
+
+        cbx.prepend(check)
+        checkWrapper.appendChild(cbx);
+
+        let svgDefs = document.createElement('svg');
+        svgDefs.setAttribute('version', '1.1');
+        svgDefs.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+        svgDefs.innerHTML = `
+  <defs>
+    <filter id="goo-12">
+      <feGaussianBlur result="blur" stdDeviation="4" in="SourceGraphic"></feGaussianBlur>
+      <feColorMatrix result="goo-12" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -7" mode="matrix" in="blur"></feColorMatrix>
+      <feBlend in2="goo-12" in="SourceGraphic"></feBlend>
+    </filter>
+  </defs>
+`;
+
+        checkWrapper.appendChild(svgDefs);
+        actionBtn.append(editBtn, deleteBtn, checkWrapper);
         buttonsDiv.append(infoBtn)
         div.append(image, buttonsDiv, name, price, overplay, actionBtn)
         main.append(div)

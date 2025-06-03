@@ -1091,10 +1091,29 @@ a {
     cursor: pointer;
 }
 
+.another-div {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
 
 @media (max-width: 480px) {
     .top-header {
         padding: 20px;
+        display: block;
+    }
+
+    .another-div {
+        margin-top: 20px;
+    }
+
+    .card {
+        margin-bottom: 30px;
+    }
+
+    .goHome,
+    .top-header h1 {
+        display: none;
     }
 
     .top-header h1 {

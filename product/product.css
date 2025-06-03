@@ -159,8 +159,8 @@ a {
     height: 24px;
     padding: 5px;
     position: absolute;
-    top: 17px;
-    right: 120px;
+    top: 15px;
+    right: 110px;
 }
 
 .menu-button {
@@ -840,7 +840,22 @@ a {
     color: #ffa723;
 }
 
+.cssbuttons-io-button,
+.login-link {
+    display: block;
+}
+
+.cssbuttons-io-button .icon {
+    top: 6px;
+}
+
 @media (max-width: 480px) {
+
+    .cssbuttons-io-button,
+    .login-link {
+        display: none;
+    }
+
     .top-header {
         padding: 20px;
     }
@@ -865,6 +880,7 @@ a {
         height: 16px;
         top: 20px;
         font-weight: 500;
+        width: 15px;
     }
 
     .render-div {

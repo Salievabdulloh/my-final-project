@@ -43,6 +43,7 @@ function changeTheme(theme) {
         shoppingDialog.style.color = 'white'
         bottomDiv.style.backgroundColor = 'hsl(0deg 0% 5.94%)'
         bottomDiv.style.color = 'hsla(206, 54%, 90%, 1)'
+        menuButton.style.color = 'hsla(206, 54%, 90%, 1)'
     } else {
         body.style.backgroundColor = 'white'
         body.style.color = 'black'
@@ -50,6 +51,7 @@ function changeTheme(theme) {
         shoppingDialog.style.color = 'black'
         bottomDiv.style.backgroundColor = 'hsla(206, 33%, 96%, 1)'
         bottomDiv.style.color = 'hsla(206, 54%, 30%, 1)'
+        menuButton.style.color = 'black'
     }
 }
 
@@ -108,7 +110,7 @@ function render() {
         let remove = document.createElement('button')
         remove.innerHTML = 'X'
         // remove.classList.add('remove')
-        remove.style.height='20px'
+        remove.style.height = '20px'
 
         remove.onclick = () => {
             removeItem(e.id)

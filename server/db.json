@@ -7,8 +7,8 @@
       "productImage": "../img/1.png",
       "productCategory": "Marcos",
       "productColor": [
-        "#000000",
-        "#ff8080"
+        "#ff0000",
+        "#0011ff"
       ],
       "productStatus": true,
       "id": "11"
@@ -20,8 +20,8 @@
       "productImage": "../img/2.png",
       "productCategory": "Marcos",
       "productColor": [
-        "#fbff00",
-        "#ff5252"
+        "#fdff85",
+        "#004cff"
       ],
       "productStatus": true,
       "id": "c4d3"
@@ -37,7 +37,7 @@
       ],
       "productCategory": "Caressa",
       "productId": "3",
-      "productStatus": false,
+      "productStatus": true,
       "id": "d1bb"
     },
     {
@@ -51,7 +51,7 @@
       ],
       "productCategory": "Liddy",
       "productId": "4",
-      "productStatus": false,
+      "productStatus": true,
       "id": "5e93"
     },
     {
@@ -135,7 +135,7 @@
       ],
       "productCategory": "Marcos",
       "productId": "10",
-      "productStatus": true,
+      "productStatus": false,
       "id": "2ef5"
     },
     {
@@ -186,60 +186,36 @@
       "productImage": "../img/13.png",
       "productCategory": "Marcos",
       "productColor": [
-        "#b07878",
+        "#ff4747",
         "#000000"
       ],
       "productStatus": true,
       "id": "ad7c"
     },
     {
-      "id": "f37e",
-      "productName": "",
-      "productImage": "",
-      "productPrice": "",
+      "productId": "7835",
+      "productName": "Chair",
+      "productPrice": "22",
+      "productImage": "../img/2.png",
       "productCategory": "",
       "productColor": [
-        "#000000",
-        "#000000"
+        "#1eff00",
+        "#ff0000"
+      ],
+      "productStatus": true,
+      "id": "7835"
+    },
+    {
+      "id": "c406",
+      "productName": "chair",
+      "productImage": "../img/12.png",
+      "productPrice": "211",
+      "productCategory": "Ikea",
+      "productColor": [
+        "#ff0000",
+        "#001eff"
       ],
       "productStatus": true
-    },
-    {
-      "id": "717a",
-      "productName": "",
-      "productImage": "",
-      "productPrice": "",
-      "productCategory": "",
-      "productColor": [
-        "#000000",
-        "#000000"
-      ],
-      "productStatus": false
-    },
-    {
-      "productId": "50ea",
-      "productName": "",
-      "productPrice": "",
-      "productImage": "../img/1.png",
-      "productCategory": "",
-      "productColor": [
-        "#000000",
-        "#000000"
-      ],
-      "productStatus": false,
-      "id": "50ea"
-    },
-    {
-      "id": "4f17",
-      "productName": "",
-      "productImage": "",
-      "productPrice": "",
-      "productCategory": "",
-      "productColor": [
-        "#000000",
-        "#000000"
-      ],
-      "productStatus": false
     }
   ],
   "admin": [

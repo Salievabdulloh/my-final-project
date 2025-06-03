@@ -308,8 +308,22 @@ main p {
     transform: scale(0.95);
 }
 
+.cssbuttons-io-button,
+.login-link {
+    display: block;
+}
+
+.cssbuttons-io-button .icon {
+    top: 6px;
+}
+
 
 @media (max-width: 480px) {
+    .cssbuttons-io-button,
+    .login-link {
+        display: none;
+    }
+
     .top-header {
         padding: 20px;
     }

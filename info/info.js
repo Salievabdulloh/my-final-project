@@ -43,6 +43,7 @@ function changeTheme(theme) {
         shoppingDialog.style.color = 'white'
         bottomDiv.style.backgroundColor = 'hsl(0deg 0% 5.94%)'
         bottomDiv.style.color = 'hsla(206, 54%, 90%, 1)'
+        menuButton.style.color = 'hsla(206, 54%, 90%, 1)'
     } else {
         body.style.backgroundColor = 'white'
         body.style.color = 'black'
@@ -50,6 +51,7 @@ function changeTheme(theme) {
         shoppingDialog.style.color = 'black'
         bottomDiv.style.backgroundColor = 'hsla(206, 33%, 96%, 1)'
         bottomDiv.style.color = 'hsla(206, 54%, 30%, 1)'
+        menuButton.style.color = 'black'
     }
 }
 
@@ -222,8 +224,84 @@ function getData(data) {
         let infoDiv = document.createElement('div')
 
         let addToCart = document.createElement('button')
-        addToCart.innerHTML = 'ADD TO CART'
-        addToCart.classList.add('add')
+        addToCart.innerHTML = ` <div class="wrap">
+    <div class="state state--default">
+      <div class="icon-cart">
+        <svg
+          stroke-linejoin="round"
+          stroke-linecap="round"
+          stroke-width="2"
+          stroke="currentColor"
+          fill="none"
+          viewBox="0 0 24 24"
+          height="1em"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle r="1" cy="21" cx="8"></circle>
+          <circle r="1" cy="21" cx="19"></circle>
+          <path
+            d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+          ></path>
+        </svg>
+      </div>
+      <div class="icon">
+        <svg
+          stroke-linejoin="round"
+          stroke-linecap="round"
+          stroke-width="2"
+          stroke="currentColor"
+          fill="none"
+          viewBox="0 0 24 24"
+          height="1em"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M5 12h14"></path>
+          <path d="M12 5v14"></path>
+        </svg>
+      </div>
+      <p>
+        <span style="--i: 0">A</span>
+        <span style="--i: 1">d</span>
+        <span style="--i: 2">d</span>
+        <span style="--i: 3">t</span>
+        <span style="--i: 4">o</span>
+        <span style="--i: 5">c</span>
+        <span style="--i: 6">a</span>
+        <span style="--i: 7">r</span>
+        <span style="--i: 8">t</span>
+      </p>
+    </div>
+    <div class="state state--added">
+      <div class="icon">
+        <svg
+          stroke-linejoin="round"
+          stroke-linecap="round"
+          stroke-width="2"
+          stroke="currentColor"
+          fill="none"
+          viewBox="0 0 24 24"
+          height="1em"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M20 6 9 17l-5-5"></path>
+        </svg>
+      </div>
+      <p>
+        <span style="--i: 5">A</span>
+        <span style="--i: 6">d</span>
+        <span style="--i: 7">d</span>
+        <span style="--i: 8">e</span>
+        <span style="--i: 9">d</span>
+      </p>
+    </div>
+  </div>
+  <div class="bg"></div>
+  <div class="bg-spin"></div>
+  <div class="bg-gradient"></div>`
+        addToCart.classList.add('button')
         addToCart.onclick = () => {
             addProduct(e)
         }
